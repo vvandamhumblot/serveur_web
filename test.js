@@ -5,6 +5,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+//chargement de base static
+app.use(express.static("public"));
+
 // Define a route
 app.get('/', (req, res) => {
   res.send('Hello, World!');
